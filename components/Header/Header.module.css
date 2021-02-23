@@ -2,19 +2,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: calc(100% + 3rem);
   position: sticky;
   top: 0;
-  padding: 2rem 1.5rem 2.5rem 1.5rem;
-  margin-left: -1.5rem;
+  padding: 2rem 0;
   background: var(--appBg);
   z-index: 2;
 }
 
 .logoLink {
-  max-width: 163px;
+  max-width: 200px;
   width: 100%;
-  color: var(--textDark);
 }
 
 .linkGroup {
