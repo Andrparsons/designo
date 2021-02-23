@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/App-design.module.css";
 
-export default function WebDesign() {
+export default function AppDesign() {
   return (
     <div className={styles.container}>
       <Head>

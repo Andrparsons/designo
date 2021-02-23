@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Graphic-design.module.css";
 
-export default function WebDesign() {
+export default function GraphicDesign() {
   return (
     <div className={styles.container}>
       <Head>
