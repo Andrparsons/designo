@@ -1,65 +1,80 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Designo | Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <section className={styles.intro}>
+          <h1>Award-winning custom designs and digital branding solutions</h1>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+          <p>
+            With over 10 years in the industry, we are experienced in creating
+            fully responsive websites, app design, and engaging brand
+            experiences. Find out more about our services.
+          </p>
+          <button>Learn more</button>
+        </section>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+        <section className={styles.projects}>
+          <div className={styles.project}>
+            <h2>Web Design</h2>
+            View Projects
+          </div>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+          <div className={styles.project}>
+            <h2>App Design</h2>
+            View Projects
+          </div>
+          <div className={styles.project}>
+            <h2>Graphic Design</h2>
+            View Projects
+          </div>
+        </section>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
+        <section className={styles.features}>
+          <div className={styles.feature}>
+            <h3>Passionate</h3>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              Each project starts with an in-depth brand research to ensure we
+              only create products that serve a purpose. We merge art, design,
+              and technology into exciting new solutions.
             </p>
-          </a>
-        </div>
-      </main>
+          </div>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+          <div className={styles.feature}>
+            <h3>Resourceful</h3>
+            <p>
+              Everything that we do has a strategic purpose. We use an agile
+              approach in all of our projects and value customer collaboration.
+              It guarantees superior results that fulfill our clients’ needs.
+            </p>
+          </div>
+
+          <div className={styles.feature}>
+            <h3>Friendly</h3>
+            <p>
+              We are a group of enthusiastic folks who know how to put people
+              first. Our success depends on our customers, and we strive to give
+              them the best experience a company can provide.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.CTA}>
+          <h2>Let’s talk about your project</h2>
+          <p>
+            Ready to take it to the next level? Contact us today and find out
+            how our expertise can help your business grow.
+          </p>
+          <button>Get in touch</button>
+        </section>
+      </main>
     </div>
-  )
+  );
 }
