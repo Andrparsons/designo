@@ -7,6 +7,7 @@ export default function Home() {
       <Head>
         <title>Designo | Home</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
       <main className={styles.main}>
@@ -21,7 +22,8 @@ export default function Home() {
           <button>Learn more</button>
         </section>
 
-        <section className={styles.projects}>
+        {/* project links s/b component */}
+        <section className={styles.projectLinks}>
           <div className={styles.project}>
             <h2>Web Design</h2>
             View Projects
@@ -66,6 +68,7 @@ export default function Home() {
           </div>
         </section>
 
+        {/* this should be a component  */}
         <section className={styles.CTA}>
           <h2>Let’s talk about your project</h2>
           <p>
