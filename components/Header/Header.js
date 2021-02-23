@@ -5,7 +5,7 @@ import styles from "./Header.module.css";
 
 import Container from "../Container/Container";
 
-// import MobileMenu from "../MobileMenu/MobileMenu";
+import MobileMenu from "../MobileMenu/MobileMenu";
 // import { IconHamburger, IconClose } from "../SvgComponents/shared/mobile";
 
 export default function Header() {
@@ -13,33 +13,34 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <Container>
-        <div className={styles.linkGroup}>
-          <Link href="/">
-            <a className={styles.logoLink}>
-              <img src="/shared/desktop/logo-dark.png" />
-            </a>
-          </Link>
-          <div className={styles.responsiveLinkGroup}>
-            <Link href="/about">
-              <a className={styles.pageLink}>our company</a>
+        <div className={styles.flex}>
+          <div className={styles.linkGroup}>
+            <Link href="/">
+              <a className={styles.logoLink}>
+                <img src="/shared/desktop/logo-dark.png" />
+              </a>
             </Link>
-            <Link href="/locations">
-              <a className={styles.pageLink}>locations</a>
-            </Link>
-            <Link href="/contact">
-              <a className={styles.pageLink}>contact</a>
-            </Link>
+            <div className={styles.responsiveLinkGroup}>
+              <Link href="/about">
+                <a className={styles.pageLink}>our company</a>
+              </Link>
+              <Link href="/locations">
+                <a className={styles.pageLink}>locations</a>
+              </Link>
+              <Link href="/contact">
+                <a className={styles.pageLink}>contact</a>
+              </Link>
+            </div>
+          </div>
+          <div className={styles.menuWrapper}>
+            <div className={styles.MenuIcon} onClick={() => setOpen(!open)}>
+              {/* need to get svg icons for this */}
+              <div className={open ? styles.notVisible : styles.visible}>H</div>
+              <div className={open ? styles.visible : styles.notVisible}>X</div>
+            </div>
+            <MobileMenu open={open} setOpen={setOpen} />
           </div>
         </div>
-        {/* <div className={styles.menuWrapper}>
-        <div className={styles.MenuIcon} onClick={() => setOpen(!open)}>
-          <IconHamburger
-            className={open ? styles.notVisible : styles.visible}
-          />
-          <IconClose className={open ? styles.visible : styles.notVisible} />
-        </div>
-        <MobileMenu open={open} setOpen={setOpen} />
-      </div> */}
       </Container>
     </header>
   );

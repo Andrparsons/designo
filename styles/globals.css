@@ -8,6 +8,11 @@
   --darkGrey: #333136;
   --white: #ffffff;
   --lightGrey: #f1f3f5;
+
+  /* intentions */
+  --appBg: var(--white);
+  --primaryBg: var(--peach);
+  --secondaryBg: var(--lightPeach);
 }
 html,
 body {
