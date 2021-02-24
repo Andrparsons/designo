@@ -11,8 +11,12 @@
 
   /* intentions */
   --appBg: var(--white);
-  --primaryBg: var(--peach);
-  --secondaryBg: var(--lightPeach);
+  --darkBg: var(--black);
+  --highlightBg: var(--peach);
+  --secondaryHighlightBg: var(--lightPeach);
+
+  --textDark: var(--black);
+  --textLight: var(--white);
 }
 html,
 body {

@@ -1,7 +1,7 @@
 .header {
   position: sticky;
   top: 0;
-  padding: 2rem 0;
+  padding: 2.25rem 0;
   background: var(--appBg);
   z-index: 2;
 }
@@ -30,18 +30,17 @@
 }
 
 .pageLink {
-  font-size: 0.75rem;
-  font-weight: 700;
-  line-height: 1.25;
-  margin-left: 2rem;
-  letter-spacing: 0.92px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--headerLink);
+  color: var(--textDark);
   cursor: pointer;
 }
 
 .pageLink:hover {
-  color: var(--headerLinkHover);
+  text-decoration: underline;
 }
 
 .visible {
@@ -60,11 +59,8 @@
 
 @media (min-width: 585px) {
   .header {
-    margin: 0;
-    padding: 0;
     position: relative;
-    margin: 0;
-    width: 100%;
+    padding: 4rem 0;
   }
 
   .menuWrapper {
@@ -72,16 +68,11 @@
   }
 
   .responsiveLinkGroup {
-    display: initial;
-  }
-}
-
-@media (min-width: 650px) {
-  .logoLink {
-    max-width: 236px;
-  }
-
-  .linkGroup {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    margin-left: 1rem;
+    width: 100%;
+    max-width: 370px;
   }
 }

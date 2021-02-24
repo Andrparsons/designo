@@ -7,8 +7,8 @@ export default function MobileMenu({ open, setOpen }) {
       className={styles.mobileMenu}
       style={
         open
-          ? { transform: "translateX(0%)" }
-          : { transform: "translateX(100%)" }
+          ? { transform: "translateX(0%)", opacity: "100%" }
+          : { transform: "translateX(100%)", opacity: "0%" }
       }
     >
       <div className={styles.mobileLinks}>

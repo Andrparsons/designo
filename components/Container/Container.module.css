@@ -3,7 +3,7 @@
   padding: 0 1.5rem;
 }
 
-@media (min-with: 550px) {
+@media (min-width: 550px) {
   .container {
     padding: 0 2.5rem;
   }
