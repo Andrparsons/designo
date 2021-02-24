@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap");
 
 :root {
   /* colours */
@@ -62,9 +62,17 @@ h3 {
   letter-spacing: 5px;
 }
 
+h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.62;
+  margin: 0;
+}
+
 p {
   font-size: 1rem;
   line-height: 1.62;
+  margin: 0;
 }
 
 @media (min-width: 550px) {
