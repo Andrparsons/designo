@@ -6,7 +6,7 @@ import styles from "./Header.module.css";
 import Container from "../Container/Container";
 
 import MobileMenu from "../MobileMenu/MobileMenu";
-// import { IconHamburger, IconClose } from "../SvgComponents/shared/mobile";
+import { IconHamburger, IconClose } from "../SvgComponents/shared/mobile";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -34,9 +34,12 @@ export default function Header() {
           </div>
           <div className={styles.menuWrapper}>
             <div className={styles.MenuIcon} onClick={() => setOpen(!open)}>
-              {/* need to get svg icons for this */}
-              <div className={open ? styles.notVisible : styles.visible}>H</div>
-              <div className={open ? styles.visible : styles.notVisible}>X</div>
+              <IconHamburger
+                className={open ? styles.notVisible : styles.visible}
+              />
+              <IconClose
+                className={open ? styles.visible : styles.notVisible}
+              />
             </div>
             <MobileMenu open={open} setOpen={setOpen} />
           </div>
