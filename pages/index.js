@@ -3,6 +3,14 @@ import styles from "../styles/Home.module.css";
 
 import Container from "../components/Container/Container";
 
+// svg illustrations
+
+import {
+  IllustrationPassionate,
+  IllustrationResourceful,
+  IllustrationFriendly,
+} from "../components/SvgComponents/home/desktop";
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -23,6 +31,10 @@ export default function Home() {
               experiences. Find out more about our services.
             </p>
             <button>Learn more</button>
+            <img
+              src="/home/desktop/image-hero-phone.png"
+              alt="Picture of a phone"
+            />
           </Container>
         </section>
 
@@ -48,6 +60,7 @@ export default function Home() {
         <section className={styles.features}>
           <Container>
             <div className={styles.feature}>
+              <IllustrationPassionate />
               <h3>Passionate</h3>
               <p>
                 Each project starts with an in-depth brand research to ensure we
@@ -57,6 +70,7 @@ export default function Home() {
             </div>
 
             <div className={styles.feature}>
+              <IllustrationResourceful />
               <h3>Resourceful</h3>
               <p>
                 Everything that we do has a strategic purpose. We use an agile
@@ -67,6 +81,7 @@ export default function Home() {
             </div>
 
             <div className={styles.feature}>
+              <IllustrationFriendly />
               <h3>Friendly</h3>
               <p>
                 We are a group of enthusiastic folks who know how to put people
