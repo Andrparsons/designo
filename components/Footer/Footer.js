@@ -4,11 +4,13 @@ import Link from "next/link";
 import Container from "../Container/Container";
 
 // svg imgs
-// import {
-//   IconFacebook,
-//   IconTwitter,
-//   IconInstagram,
-// } from "../SvgComponents/shared/desktop";
+import {
+  IconFacebook,
+  IconTwitter,
+  IconInstagram,
+  IconYoutube,
+  IconPinterest,
+} from "../SvgComponents/shared/desktop";
 
 export default function Footer() {
   return (
@@ -47,17 +49,23 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* <div className={styles.footerIcons}>
-        <a className={styles.iconLink} href="https://www.facebook.com">
-          <IconFacebook />
-        </a>
-        <a className={styles.iconLink} href="https://www.twitter.com">
-          <IconTwitter />
-        </a>
-        <a className={styles.iconLink} href="https://www.instagram.com">
-          <IconInstagram />
-        </a>
-      </div> */}
+        <div className={styles.footerIcons}>
+          <a className={styles.iconLink} href="https://www.facebook.com">
+            <IconFacebook />
+          </a>
+          <a className={styles.iconLink} href="https://www.facebook.com">
+            <IconYoutube />
+          </a>
+          <a className={styles.iconLink} href="https://www.twitter.com">
+            <IconTwitter />
+          </a>
+          <a className={styles.iconLink} href="https://www.twitter.com">
+            <IconPinterest />
+          </a>
+          <a className={styles.iconLink} href="https://www.instagram.com">
+            <IconInstagram />
+          </a>
+        </div>
       </Container>
     </footer>
   );
