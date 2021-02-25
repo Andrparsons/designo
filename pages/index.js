@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
 import Container from "../components/Container/Container";
+import Button from "../components/Button/Button";
 
 // svg illustrations
 
@@ -30,7 +31,7 @@ export default function Home() {
               fully responsive websites, app design, and engaging brand
               experiences. Find out more about our services.
             </p>
-            <button>Learn more</button>
+            <Button>Learn more</Button>
             <img
               src="/home/desktop/image-hero-phone.png"
               alt="Picture of a phone"

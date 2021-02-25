@@ -1,0 +1,30 @@
+.primary,
+.secondary {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+  font-family: "Jost", sans-serif;
+  text-transform: uppercase;
+
+  padding: 1rem 1.5rem;
+  border-radius: var(--borderRadiusSmall);
+}
+
+.primary {
+  background-color: var(--btnPrimaryBg);
+  color: var(--textDark);
+}
+
+.secondary {
+  background-color: var(--btnSecondaryBg);
+  color: var(--textLight);
+}
+
+.primary:hover,
+.secondary:hover {
+  background-color: var(--btnHover);
+  color: var(--textLight);
+}
