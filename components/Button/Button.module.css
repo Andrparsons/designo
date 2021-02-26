@@ -8,8 +8,8 @@
   cursor: pointer;
   font-family: "Jost", sans-serif;
   text-transform: uppercase;
-
-  padding: 1rem 1.5rem;
+  width: 9.5rem;
+  height: 3.5rem;
   border-radius: var(--borderRadiusSmall);
 }
 

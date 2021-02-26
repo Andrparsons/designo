@@ -3,6 +3,7 @@ import styles from "../styles/Home.module.css";
 
 import Container from "../components/Container/Container";
 import Button from "../components/Button/Button";
+import CTA from "../components/CTA/CTA";
 
 // svg illustrations
 
@@ -96,12 +97,7 @@ export default function Home() {
         {/* this should be a component  */}
         <section className={styles.CTA}>
           <Container>
-            <h2>Let’s talk about your project</h2>
-            <p>
-              Ready to take it to the next level? Contact us today and find out
-              how our expertise can help your business grow.
-            </p>
-            <button>Get in touch</button>
+            <CTA />
           </Container>
         </section>
       </main>
