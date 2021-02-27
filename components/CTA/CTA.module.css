@@ -1,4 +1,5 @@
 .CTA {
+  text-align: center;
   background-image: url("/shared/desktop/bg-pattern-call-to-action.svg");
   background-color: var(--highlightBg);
   background-repeat: no-repeat;
