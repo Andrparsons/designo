@@ -94,7 +94,6 @@ export default function Home() {
           </Container>
         </section>
 
-        {/* this should be a component  */}
         <section className={styles.CTASection}>
           <Container>
             <CTA />

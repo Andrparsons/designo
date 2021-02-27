@@ -1,6 +1,9 @@
 import Head from "next/head";
 import styles from "../styles/Graphic-design.module.css";
 
+import Container from "../components/Container/Container";
+import CTA from "../components/CTA/CTA";
+
 export default function GraphicDesign() {
   return (
     <div className={styles.container}>
@@ -44,6 +47,12 @@ export default function GraphicDesign() {
             <h2>Web Design</h2>
             View Projects
           </div>
+        </section>
+
+        <section className={styles.CTASection}>
+          <Container>
+            <CTA />
+          </Container>
         </section>
       </main>
     </div>

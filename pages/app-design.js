@@ -1,6 +1,9 @@
 import Head from "next/head";
 import styles from "../styles/App-design.module.css";
 
+import Container from "../components/Container/Container";
+import CTA from "../components/CTA/CTA";
+
 export default function AppDesign() {
   return (
     <div className={styles.container}>
@@ -54,6 +57,12 @@ export default function AppDesign() {
             <h2>Graphic Design</h2>
             View Projects
           </div>
+        </section>
+
+        <section className={styles.CTASection}>
+          <Container>
+            <CTA />
+          </Container>
         </section>
       </main>
     </div>

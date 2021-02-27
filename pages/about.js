@@ -1,6 +1,9 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
+import CTA from "../components/CTA/CTA";
+import Container from "../components/Container/Container";
+
 export default function About() {
   return (
     <div className={styles.container}>
@@ -66,14 +69,10 @@ export default function About() {
           </p>
         </section>
 
-        {/* this should be a component  */}
-        <section className={styles.CTA}>
-          <h2>Let’s talk about your project</h2>
-          <p>
-            Ready to take it to the next level? Contact us today and find out
-            how our expertise can help your business grow.
-          </p>
-          <button>Get in touch</button>
+        <section className={styles.CTASection}>
+          <Container>
+            <CTA />
+          </Container>
         </section>
       </main>
     </div>
