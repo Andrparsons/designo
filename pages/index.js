@@ -23,7 +23,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <section className={styles.intro}>
+        <section className={styles.introSection}>
           <Container>
             <h1>Award-winning custom designs and digital branding solutions</h1>
 
@@ -41,7 +41,7 @@ export default function Home() {
         </section>
 
         {/* project links s/b component */}
-        <section className={styles.projectLinks}>
+        <section className={styles.projectSection}>
           <Container>
             <div className={styles.project}>
               <h2>Web Design</h2>
@@ -59,7 +59,7 @@ export default function Home() {
           </Container>
         </section>
 
-        <section className={styles.features}>
+        <section className={styles.featureSection}>
           <Container>
             <div className={styles.feature}>
               <IllustrationPassionate />
@@ -95,7 +95,7 @@ export default function Home() {
         </section>
 
         {/* this should be a component  */}
-        <section className={styles.CTA}>
+        <section className={styles.CTASection}>
           <Container>
             <CTA />
           </Container>

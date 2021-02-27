@@ -1,9 +1,16 @@
+.projectSection,
+.featureSection,
+.CTASection {
+  margin-top: 7.5rem;
+}
+
 .main {
   text-align: center;
   color: var(--textDark);
+  position: relative;
 }
 
-.intro {
+.introSection {
   background-color: var(--highlightBg);
   color: var(--textLight);
   padding-top: 5rem;

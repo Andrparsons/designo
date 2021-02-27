@@ -8,10 +8,12 @@
   padding: 4rem 1.5rem;
   display: flex;
   flex-direction: column;
+  position: relative;
+  margin-bottom: -11rem;
 }
 
 .CTAText {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 .CTAButton {
@@ -21,11 +23,13 @@
 @media (min-width: 600px) {
   .CTA {
     background-position: center left -20px;
+    margin-bottom: -5.375rem;
   }
 }
 
 @media (min-width: 900px) {
   .CTA {
     background-position: center right;
+    margin-bottom: -4.5rem;
   }
 }
