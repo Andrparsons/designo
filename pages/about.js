@@ -14,7 +14,7 @@ export default function About() {
       </Head>
 
       <main className={styles.main}>
-        <section className={styles.intro}>
+        <section className={styles.introSection}>
           <h1>About us</h1>
 
           <p>

@@ -14,7 +14,7 @@ export default function AppDesign() {
       </Head>
 
       <main className={styles.main}>
-        <section div={className.intro}>
+        <section className={styles.introSection}>
           <h1>App design</h1>
           <p>
             Our mobile designs bring intuitive digital solutions to your

@@ -14,7 +14,7 @@ export default function GraphicDesign() {
       </Head>
 
       <main className={styles.main}>
-        <section div={className.intro}>
+        <section className={styles.introSection}>
           <h1>Graphic design</h1>
           <p>
             We deliver eye-catching branding materials that are tailored to meet
