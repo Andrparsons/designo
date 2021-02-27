@@ -12,8 +12,16 @@
   margin-bottom: -11rem;
 }
 
+.CTATitle {
+  margin: 0 auto;
+  max-width: 350px;
+  font-size: 2rem;
+  line-height: 1.12;
+}
+
 .CTAText {
-  margin-top: 1rem;
+  margin: 1rem auto 0;
+  max-width: 450px;
 }
 
 .CTAButton {
@@ -24,12 +32,35 @@
   .CTA {
     background-position: center left -20px;
     margin-bottom: -5.375rem;
+    padding: 3.625rem;
+  }
+
+  .CTATitle {
+    font-size: 2.5rem;
+    line-height: 1;
   }
 }
 
 @media (min-width: 900px) {
   .CTA {
+    text-align: left;
     background-position: center right;
     margin-bottom: -4.5rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4.5rem 6rem;
+  }
+
+  .CTATitle {
+    margin: 0;
+  }
+
+  .CTAText {
+    max-width: 460px;
+  }
+
+  .CTAButton {
+    margin-top: 0;
   }
 }

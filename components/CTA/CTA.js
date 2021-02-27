@@ -6,7 +6,7 @@ export default function CTA() {
   return (
     <div className={styles.CTA}>
       <div className={styles.CTAContent}>
-        <h1>Let’s talk about your project</h1>
+        <h2 className={styles.CTATitle}>Let’s talk about your project</h2>
         <p className={styles.CTAText}>
           Ready to take it to the next level? Contact us today and find out how
           our expertise can help your business grow.
