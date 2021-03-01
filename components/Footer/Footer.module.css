@@ -57,10 +57,15 @@
 
 .iconLink {
   margin-right: 1rem;
+  color: var(--iconColour);
 }
 
 .iconLink:last-child {
   margin-right: 0;
+}
+
+.iconLink:hover {
+  color: var(--iconHover);
 }
 
 @media (min-width: 700px) {
@@ -116,5 +121,12 @@
   .footerIcons {
     min-width: 184px;
     margin-left: 3.125rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .footer {
+    padding-top: 9rem;
+    padding-bottom: 4.5rem;
   }
 }

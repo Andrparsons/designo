@@ -19,7 +19,11 @@
   --textLight: var(--white);
 
   --btnPrimaryBg: var(--white);
-  --btnSecondaryBg: var(--lightPeach);
+  --btnSecondaryBg: var(--peach);
+  --btnHover: var(--lightPeach);
+
+  --iconColour: var(--peach);
+  --iconHover: var(--lightPeach);
 
   /* border radius */
   --borderRadiusSmall: 0.5rem;
