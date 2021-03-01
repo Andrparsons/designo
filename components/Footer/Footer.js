@@ -35,36 +35,38 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className={styles.addresses}>
-          <div className={styles.address}>
-            <h4>Designo Central Office</h4>
-            <p className={styles.addressLine}>3886 Wellington Street</p>
-            <p className={styles.addressLine}>Toronto, Ontario M9C 3J5</p>
+        <div className={styles.externalLinks}>
+          <div className={styles.addresses}>
+            <div className={styles.address}>
+              <h4>Designo Central Office</h4>
+              <p className={styles.addressLine}>3886 Wellington Street</p>
+              <p className={styles.addressLine}>Toronto, Ontario M9C 3J5</p>
+            </div>
+
+            <div className={styles.address}>
+              <h4>Contact Us (Central Office)</h4>
+              <p className={styles.addressLine}>P : +1 253-863-8967</p>
+              <p className={styles.addressLine}>M : contact@designo.co</p>
+            </div>
           </div>
 
-          <div className={styles.address}>
-            <h4>Contact Us (Central Office)</h4>
-            <p className={styles.addressLine}>P : +1 253-863-8967</p>
-            <p className={styles.addressLine}>M : contact@designo.co</p>
+          <div className={styles.footerIcons}>
+            <a className={styles.iconLink} href="https://www.facebook.com">
+              <IconFacebook />
+            </a>
+            <a className={styles.iconLink} href="https://www.facebook.com">
+              <IconYoutube />
+            </a>
+            <a className={styles.iconLink} href="https://www.twitter.com">
+              <IconTwitter />
+            </a>
+            <a className={styles.iconLink} href="https://www.twitter.com">
+              <IconPinterest />
+            </a>
+            <a className={styles.iconLink} href="https://www.instagram.com">
+              <IconInstagram />
+            </a>
           </div>
-        </div>
-
-        <div className={styles.footerIcons}>
-          <a className={styles.iconLink} href="https://www.facebook.com">
-            <IconFacebook />
-          </a>
-          <a className={styles.iconLink} href="https://www.facebook.com">
-            <IconYoutube />
-          </a>
-          <a className={styles.iconLink} href="https://www.twitter.com">
-            <IconTwitter />
-          </a>
-          <a className={styles.iconLink} href="https://www.twitter.com">
-            <IconPinterest />
-          </a>
-          <a className={styles.iconLink} href="https://www.instagram.com">
-            <IconInstagram />
-          </a>
         </div>
       </Container>
     </footer>
