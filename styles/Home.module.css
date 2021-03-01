@@ -15,3 +15,17 @@
   color: var(--textLight);
   padding-top: 5rem;
 }
+
+@media (min-width: 900px) {
+  .projectGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 1.875rem;
+    row-gap: 1.5rem;
+  }
+
+  .largeProjectLink {
+    grid-row: 1 / span 2;
+  }
+}

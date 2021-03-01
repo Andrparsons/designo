@@ -51,6 +51,12 @@
   opacity: 0.5;
 }
 
+.addressLine {
+  font-size: 0.9375rem;
+  line-height: 1.67;
+  margin: 0;
+}
+
 .footerIcons {
   margin-top: 2.5rem;
 }
@@ -116,6 +122,11 @@
 
   .address {
     margin-top: 2rem;
+  }
+
+  .addressLine {
+    font-size: 1rem;
+    line-height: 1.62;
   }
 
   .footerIcons {

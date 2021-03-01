@@ -1,0 +1,62 @@
+.link {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: fit-content;
+  margin: 0 auto 1.5rem;
+}
+
+.link::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000000;
+  opacity: 0.5;
+  border-radius: var(--borderRadiuslarge);
+}
+
+.link:hover::before {
+  background: var(--highlightBg);
+  opacity: 0.8;
+}
+
+.projectImg {
+  border-radius: var(--borderRadiuslarge);
+  vertical-align: middle;
+}
+
+.projectContent {
+  position: absolute;
+  color: var(--textLight);
+  text-transform: uppercase;
+}
+
+.projectLine {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.75rem;
+}
+
+.view {
+  font-size: 0.9375rem;
+  letter-spacing: 5px;
+  margin-right: 1rem;
+}
+
+@media (min-width: 550px) {
+  .projectLine {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .link {
+    margin: 0;
+  }
+}

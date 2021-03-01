@@ -3,6 +3,7 @@ import styles from "../styles/Home.module.css";
 
 import Container from "../components/Container/Container";
 import Button from "../components/Button/Button";
+import ProjectLink from "../components/ProjectLink/ProjectLink";
 import CTA from "../components/CTA/CTA";
 
 // svg illustrations
@@ -43,18 +44,32 @@ export default function Home() {
         {/* project links s/b component */}
         <section className={styles.projectSection}>
           <Container>
-            <div className={styles.project}>
-              <h2>Web Design</h2>
-              View Projects
-            </div>
+            <div className={styles.projectGrid}>
+              <div className={styles.largeProjectLink}>
+                <ProjectLink
+                  mobileImg="/home/mobile/image-web-design.jpg"
+                  tabletImg="/home/tablet/image-web-design.jpg"
+                  desktopImg="/home/desktop/image-web-design-large.jpg"
+                  title="Web Design"
+                  linkPath="/web-design"
+                />
+              </div>
 
-            <div className={styles.project}>
-              <h2>App Design</h2>
-              View Projects
-            </div>
-            <div className={styles.project}>
-              <h2>Graphic Design</h2>
-              View Projects
+              <ProjectLink
+                mobileImg="/home/mobile/image-app-design.jpg"
+                tabletImg="/home/tablet/image-app-design.jpg"
+                desktopImg="/home/desktop/image-app-design.jpg"
+                title="App Design"
+                linkPath="/app-design"
+              />
+
+              <ProjectLink
+                mobileImg="/home/mobile/image-graphic-design.jpg"
+                tabletImg="/home/tablet/image-graphic-design.jpg"
+                desktopImg="/home/desktop/image-graphic-design.jpg"
+                title="Grpahic Design"
+                linkPath="/graphic-design"
+              />
             </div>
           </Container>
         </section>
