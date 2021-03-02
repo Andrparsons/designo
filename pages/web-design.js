@@ -3,6 +3,7 @@ import styles from "../styles/Web-design.module.css";
 
 import Container from "../components/Container/Container";
 import CTA from "../components/CTA/CTA";
+import ProjectLink from "../components/ProjectLink/ProjectLink";
 
 export default function WebDesign() {
   return (
@@ -52,7 +53,29 @@ export default function WebDesign() {
             marketing
           </div>
         </section>
-        {/* project links s/b component */}
+
+        <section className={styles.projectSection}>
+          <Container>
+            <div className={styles.projectGrid}>
+              <ProjectLink
+                mobileImg="/home/mobile/image-app-design.jpg"
+                tabletImg="/home/tablet/image-app-design.jpg"
+                desktopImg="/home/desktop/image-app-design.jpg"
+                title="App Design"
+                linkPath="/app-design"
+              />
+
+              <ProjectLink
+                mobileImg="/home/mobile/image-graphic-design.jpg"
+                tabletImg="/home/tablet/image-graphic-design.jpg"
+                desktopImg="/home/desktop/image-graphic-design.jpg"
+                title="Grpahic Design"
+                linkPath="/graphic-design"
+              />
+            </div>
+          </Container>
+        </section>
+
         <section className={styles.projectLinks}>
           <div className={styles.project}>
             <h2>App Design</h2>

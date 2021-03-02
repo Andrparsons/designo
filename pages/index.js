@@ -41,7 +41,6 @@ export default function Home() {
           </Container>
         </section>
 
-        {/* project links s/b component */}
         <section className={styles.projectSection}>
           <Container>
             <div className={styles.projectGrid}>

@@ -3,6 +3,7 @@ import styles from "../styles/Graphic-design.module.css";
 
 import Container from "../components/Container/Container";
 import CTA from "../components/CTA/CTA";
+import ProjectLink from "../components/ProjectLink/ProjectLink";
 
 export default function GraphicDesign() {
   return (
@@ -38,15 +39,26 @@ export default function GraphicDesign() {
           </div>
         </section>
         {/* project links s/b component */}
-        <section className={styles.projectLinks}>
-          <div className={styles.project}>
-            <h2>App Design</h2>
-            View Projects
-          </div>
-          <div className={styles.project}>
-            <h2>Web Design</h2>
-            View Projects
-          </div>
+        <section className={styles.projectSection}>
+          <Container>
+            <div className={styles.projectGrid}>
+              <ProjectLink
+                mobileImg="/home/mobile/image-app-design.jpg"
+                tabletImg="/home/tablet/image-app-design.jpg"
+                desktopImg="/home/desktop/image-app-design.jpg"
+                title="App Design"
+                linkPath="/app-design"
+              />
+
+              <ProjectLink
+                mobileImg="/home/mobile/image-web-design.jpg"
+                tabletImg="/home/tablet/image-web-design.jpg"
+                desktopImg="/home/desktop/image-web-design-large.jpg"
+                title="Web Design"
+                linkPath="/web-design"
+              />
+            </div>
+          </Container>
         </section>
 
         <section className={styles.CTASection}>
