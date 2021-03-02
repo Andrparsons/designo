@@ -71,35 +71,51 @@ export default function Home() {
 
         <section className={styles.featureSection}>
           <Container>
-            <div className={styles.feature}>
-              <IllustrationPassionate />
-              <h3>Passionate</h3>
-              <p>
-                Each project starts with an in-depth brand research to ensure we
-                only create products that serve a purpose. We merge art, design,
-                and technology into exciting new solutions.
-              </p>
-            </div>
+            <div className={styles.features}>
+              <div className={styles.feature}>
+                <div className={styles.passionateContainer}>
+                  <IllustrationPassionate />
+                </div>
+                <div className={styles.featureContent}>
+                  <h3>Passionate</h3>
+                  <p className={styles.featureText}>
+                    Each project starts with an in-depth brand research to
+                    ensure we only create products that serve a purpose. We
+                    merge art, design, and technology into exciting new
+                    solutions.
+                  </p>
+                </div>
+              </div>
 
-            <div className={styles.feature}>
-              <IllustrationResourceful />
-              <h3>Resourceful</h3>
-              <p>
-                Everything that we do has a strategic purpose. We use an agile
-                approach in all of our projects and value customer
-                collaboration. It guarantees superior results that fulfill our
-                clients’ needs.
-              </p>
-            </div>
+              <div className={styles.feature}>
+                <div className={styles.resourcefulContainer}>
+                  <IllustrationResourceful />
+                </div>
+                <div className={styles.featureContent}>
+                  <h3>Resourceful</h3>
+                  <p className={styles.featureText}>
+                    Everything that we do has a strategic purpose. We use an
+                    agile approach in all of our projects and value customer
+                    collaboration. It guarantees superior results that fulfill
+                    our clients’ needs.
+                  </p>
+                </div>
+              </div>
 
-            <div className={styles.feature}>
-              <IllustrationFriendly />
-              <h3>Friendly</h3>
-              <p>
-                We are a group of enthusiastic folks who know how to put people
-                first. Our success depends on our customers, and we strive to
-                give them the best experience a company can provide.
-              </p>
+              <div className={styles.feature}>
+                <div className={styles.friendlyContainer}>
+                  <IllustrationFriendly />
+                </div>
+                <div className={styles.featureContent}>
+                  <h3>Friendly</h3>
+                  <p className={styles.featureText}>
+                    We are a group of enthusiastic folks who know how to put
+                    people first. Our success depends on our customers, and we
+                    strive to give them the best experience a company can
+                    provide.
+                  </p>
+                </div>
+              </div>
             </div>
           </Container>
         </section>
