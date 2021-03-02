@@ -25,7 +25,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <section className={styles.introSection}>
-          <Container>
+          <div className={styles.introContainer}>
             <h1>Award-winning custom designs and digital branding solutions</h1>
 
             <p className={styles.introParagraph}>
@@ -34,7 +34,7 @@ export default function Home() {
               experiences. Find out more about our services.
             </p>
             <Button>Learn more</Button>
-          </Container>
+          </div>
         </section>
 
         <section className={styles.projectSection}>

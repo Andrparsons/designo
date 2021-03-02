@@ -27,10 +27,25 @@
   margin: 1.5rem 0;
 }
 
+.introContainer {
+  padding: 0 1.5rem;
+}
+
 @media (min-width: 550px) {
   .introSection {
     margin: 0 2.5rem;
     border-radius: var(--borderRadiuslarge);
+    padding-top: 3.75rem;
+    background-position: center bottom -22.25rem, center left 10.75rem;
+  }
+
+  .introContainer {
+    padding: 0 3.625rem;
+  }
+
+  .introParagraph {
+    max-width: 445px;
+    margin: 1.5rem auto;
   }
 }
 
@@ -38,6 +53,19 @@
   .introSection {
     max-width: 1111px;
     margin: 0 auto;
+    padding: 9rem 0;
+    background-position: top -1.75rem right -5rem, top right;
+  }
+
+  .introContainer {
+    text-align: left;
+    max-width: 540px;
+    padding: 0;
+    margin-left: 6rem;
+  }
+
+  .introParagraph {
+    margin: 2.25rem 0 2.5rem;
   }
 }
 
