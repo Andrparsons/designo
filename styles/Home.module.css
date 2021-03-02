@@ -10,11 +10,38 @@
   position: relative;
 }
 
+/* intro */
+
 .introSection {
   background-color: var(--highlightBg);
   color: var(--textLight);
   padding-top: 5rem;
+  padding-bottom: 28.125rem;
+  background-image: url(/home/desktop/image-hero-phone.png),
+    url(/home/desktop/bg-pattern-hero-home.svg);
+  background-position: center bottom -23.25rem, center left;
+  background-repeat: no-repeat;
 }
+
+.introParagraph {
+  margin: 1.5rem 0;
+}
+
+@media (min-width: 550px) {
+  .introSection {
+    margin: 0 2.5rem;
+    border-radius: var(--borderRadiuslarge);
+  }
+}
+
+@media (min-width: 900px) {
+  .introSection {
+    max-width: 1111px;
+    margin: 0 auto;
+  }
+}
+
+/* project section */
 
 @media (min-width: 900px) {
   .projectGrid {

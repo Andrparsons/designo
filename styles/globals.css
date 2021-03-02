@@ -81,8 +81,8 @@ h4 {
 }
 
 p {
-  font-size: 1rem;
-  line-height: 1.62;
+  font-size: 0.9375rem;
+  line-height: 1.67;
   margin: 0;
 }
 
@@ -101,6 +101,5 @@ p {
   p {
     font-size: 1rem;
     line-height: 1.62;
-    margin: 0;
   }
 }
