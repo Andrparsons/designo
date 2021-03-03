@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "../styles/App-design.module.css";
+import styles from "../styles/Design.module.css";
 
 import Container from "../components/Container/Container";
 import CTA from "../components/CTA/CTA";
@@ -17,7 +17,7 @@ export default function AppDesign() {
       <main className={styles.main}>
         <section className={styles.introSection}>
           <h1>App design</h1>
-          <p>
+          <p className={styles.introParagraph}>
             Our mobile designs bring intuitive digital solutions to your
             customers right at their fingertips.
           </p>

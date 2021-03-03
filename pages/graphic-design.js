@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "../styles/Graphic-design.module.css";
+import styles from "../styles/Design.module.css";
 
 import Container from "../components/Container/Container";
 import CTA from "../components/CTA/CTA";
@@ -17,7 +17,7 @@ export default function GraphicDesign() {
       <main className={styles.main}>
         <section className={styles.introSection}>
           <h1>Graphic design</h1>
-          <p>
+          <p className={styles.introParagraph}>
             We deliver eye-catching branding materials that are tailored to meet
             your business objectives.
           </p>

@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "../styles/Web-design.module.css";
+import styles from "../styles/Design.module.css";
 
 import Container from "../components/Container/Container";
 import CTA from "../components/CTA/CTA";
@@ -16,11 +16,13 @@ export default function WebDesign() {
 
       <main className={styles.main}>
         <section className={styles.introSection}>
-          <h1>Web design</h1>
-          <p>
-            We build websites that serve as powerful marketing tools and bring
-            memorable brand experiences.
-          </p>
+          <div className={styles.introContainer}>
+            <h1>Web design</h1>
+            <p className={styles.introParagraph}>
+              We build websites that serve as powerful marketing tools and bring
+              memorable brand experiences.
+            </p>
+          </div>
         </section>
 
         {/* cards s/b components */}
@@ -74,17 +76,6 @@ export default function WebDesign() {
               />
             </div>
           </Container>
-        </section>
-
-        <section className={styles.projectLinks}>
-          <div className={styles.project}>
-            <h2>App Design</h2>
-            View Projects
-          </div>
-          <div className={styles.project}>
-            <h2>Graphic Design</h2>
-            View Projects
-          </div>
         </section>
 
         <section className={styles.CTASection}>
