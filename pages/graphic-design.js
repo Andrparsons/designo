@@ -24,7 +24,7 @@ export default function GraphicDesign() {
         </section>
 
         {/* cards s/b components */}
-        <section className={styles.cards}>
+        <section className={styles.cardSection}>
           <div className={styles.card}>
             Tim Brown A book cover designed for Tim Brown’s new release,
             ‘Change’
@@ -53,7 +53,7 @@ export default function GraphicDesign() {
               <ProjectLink
                 mobileImg="/home/mobile/image-web-design.jpg"
                 tabletImg="/home/tablet/image-web-design.jpg"
-                desktopImg="/home/desktop/image-web-design-large.jpg"
+                desktopImg="/home/desktop/image-web-design-small.jpg"
                 title="Web Design"
                 linkPath="/web-design"
               />

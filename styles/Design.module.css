@@ -1,3 +1,17 @@
+.projectSection,
+.cardSection,
+.CTASection {
+  margin-top: 7.5rem;
+}
+
+@media (min-width: 900px) {
+  .projectSection,
+  .cardSection,
+  .CTASection {
+    margin-top: 10rem;
+  }
+}
+
 .introSection {
   background-color: var(--highlightBg);
   color: var(--textLight);
@@ -39,5 +53,16 @@
     max-width: 1111px;
     margin: 0 auto;
     background-position: center right;
+  }
+}
+
+/* project section */
+
+@media (min-width: 900px) {
+  .projectGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1.875rem;
+    row-gap: 1.5rem;
   }
 }

@@ -24,7 +24,7 @@ export default function AppDesign() {
         </section>
 
         {/* cards s/b components */}
-        <section className={styles.cards}>
+        <section className={styles.cardSection}>
           <div className={styles.card}>
             Airfilter Solving the problem of poor indoor air quality by
             filtering the air
@@ -70,17 +70,6 @@ export default function AppDesign() {
               />
             </div>
           </Container>
-        </section>
-
-        <section className={styles.projectLinks}>
-          <div className={styles.project}>
-            <h2>Web Design</h2>
-            View Projects
-          </div>
-          <div className={styles.project}>
-            <h2>Graphic Design</h2>
-            View Projects
-          </div>
         </section>
 
         <section className={styles.CTASection}>

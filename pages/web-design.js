@@ -26,7 +26,7 @@ export default function WebDesign() {
         </section>
 
         {/* cards s/b components */}
-        <section className={styles.cards}>
+        <section className={styles.cardSection}>
           <div className={styles.card}>
             Express A multi-carrier shipping website for ecommerce businesses
           </div>
