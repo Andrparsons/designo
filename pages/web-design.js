@@ -4,6 +4,7 @@ import styles from "../styles/Design.module.css";
 import Container from "../components/Container/Container";
 import CTA from "../components/CTA/CTA";
 import ProjectLink from "../components/ProjectLink/ProjectLink";
+import Card from "../components/Card/Card";
 
 export default function WebDesign() {
   return (
@@ -27,33 +28,49 @@ export default function WebDesign() {
 
         {/* cards s/b components */}
         <section className={styles.cardSection}>
-          <div className={styles.card}>
-            Express A multi-carrier shipping website for ecommerce businesses
-          </div>
+          <Container>
+            <div className={styles.gridCardContainer}>
+              <Card
+                imgSrc="/web-design/desktop/image-express.jpg"
+                title="Express"
+                text="A multi-carrier shipping website for ecommerce businesses"
+              />
+              <Card
+                imgSrc="/web-design/desktop/image-transfer.jpg"
+                title="Transfer"
+                text="Site for low-cost money transfers and sending money
+              within seconds"
+              />
 
-          <div className={styles.card}>
-            Transfer Site for low-cost money transfers and sending money within
-            seconds
-          </div>
+              <Card
+                imgSrc="/web-design/desktop/image-photon.jpg"
+                title="Photon"
+                text="A state-of-the-art music player with high-resolution audio
+              and DSP effects"
+              />
 
-          <div className={styles.card}>
-            Photon A state-of-the-art music player with high-resolution audio
-            and DSP effects
-          </div>
+              <Card
+                imgSrc="/web-design/desktop/image-builder.jpg"
+                title="Builder"
+                text="Connects users with local contractors based on their
+              location"
+              />
 
-          <div className={styles.card}>
-            Builder Connects users with local contractors based on their
-            location
-          </div>
+              <Card
+                imgSrc="/web-design/desktop/image-blogr.jpg"
+                title="Blogr"
+                text="Blogr is a platform for creating an online blog or
+              publication"
+              />
 
-          <div className={styles.card}>
-            Blogr Blogr is a platform for creating an online blog or publication
-          </div>
-
-          <div className={styles.card}>
-            Camp Get expert training in coding, data, design, and digital
-            marketing
-          </div>
+              <Card
+                imgSrc="/web-design/desktop/image-camp.jpg"
+                title="Camp"
+                text="Get expert training in coding, data, design, and digital
+              marketing"
+              />
+            </div>
+          </Container>
         </section>
 
         <section className={styles.projectSection}>

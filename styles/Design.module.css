@@ -66,3 +66,20 @@
     row-gap: 1.5rem;
   }
 }
+
+/* card section */
+
+@media (min-width: 900px) {
+  .gridCardContainer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 1.875rem;
+    row-gap: 2rem;
+  }
+}
+
+@media (min-width: 1125px) {
+  .gridCardContainer {
+    justify-content: space-between;
+  }
+}

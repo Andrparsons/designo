@@ -8,15 +8,18 @@
   --darkGrey: #333136;
   --white: #ffffff;
   --lightGrey: #f1f3f5;
+  --veryLightPink: #fdf3f0;
 
   /* intentions */
   --appBg: var(--white);
   --darkBg: var(--black);
   --highlightBg: var(--peach);
   --secondaryHighlightBg: var(--lightPeach);
+  --cardBg: var(--veryLightPink);
 
   --textDark: var(--black);
   --textLight: var(--white);
+  --cardTitleText: var(--peach);
 
   --btnPrimaryBg: var(--white);
   --btnSecondaryBg: var(--peach);
