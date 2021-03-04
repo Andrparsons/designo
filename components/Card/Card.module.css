@@ -47,10 +47,6 @@
     margin-bottom: 2rem;
   }
 
-  .cardImg {
-    max-width: 339px;
-  }
-
   .cardContent {
     width: 100%;
     display: flex;
