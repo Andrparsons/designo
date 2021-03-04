@@ -4,6 +4,7 @@ import styles from "../styles/Design.module.css";
 import Container from "../components/Container/Container";
 import CTA from "../components/CTA/CTA";
 import ProjectLink from "../components/ProjectLink/ProjectLink";
+import Card from "../components/Card/Card";
 
 export default function AppDesign() {
   return (
@@ -23,32 +24,43 @@ export default function AppDesign() {
           </p>
         </section>
 
-        {/* cards s/b components */}
         <section className={styles.cardSection}>
-          <div className={styles.card}>
-            Airfilter Solving the problem of poor indoor air quality by
-            filtering the air
-          </div>
+          <Container>
+            <div className={styles.gridCardContainer}>
+              <Card
+                imgSrc="/app-design/desktop/image-airfilter.jpg"
+                title="Airfilter"
+                text="Solving the problem of poor indoor air quality by
+                filtering the air"
+              />
+              <Card
+                imgSrc="/app-design/desktop/image-eyecam.jpg"
+                title="Eyecam"
+                text="Product that lets you edit your favorite photos and videos at
+                any time"
+              />
 
-          <div className={styles.card}>
-            Eyecam Product that lets you edit your favorite photos and videos at
-            any time
-          </div>
+              <Card
+                imgSrc="/app-design/desktop/image-faceit.jpg"
+                title="Faceit"
+                text="Get to meet your favorite internet superstar with the faceit
+                app"
+              />
 
-          <div className={styles.card}>
-            Faceit Get to meet your favorite internet superstar with the faceit
-            app
-          </div>
+              <Card
+                imgSrc="/app-design/desktop/image-todo.jpg"
+                title="Todo"
+                text="A todo app that features cloud sync with light and dark mode"
+              />
 
-          <div className={styles.card}>
-            Todo A todo app that features cloud sync with light and dark mode
-          </div>
-
-          <div className={styles.card}>
-            Loopstudios A VR experience app made for Loopstudios
-          </div>
+              <Card
+                imgSrc="/app-design/desktop/image-loopstudios.jpg"
+                title="Loopstudios"
+                text="A VR experience app made for Loopstudios"
+              />
+            </div>
+          </Container>
         </section>
-        {/* project links s/b component */}
 
         <section className={styles.projectSection}>
           <Container>

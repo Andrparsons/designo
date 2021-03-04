@@ -5,7 +5,6 @@
   margin-bottom: 2.5rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
 }
 
 .card:last-child {
@@ -14,6 +13,7 @@
 
 .cardImg {
   vertical-align: middle;
+  align-self: flex-start;
 }
 
 .cardContent {

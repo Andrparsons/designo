@@ -26,7 +26,6 @@ export default function WebDesign() {
           </div>
         </section>
 
-        {/* cards s/b components */}
         <section className={styles.cardSection}>
           <Container>
             <div className={styles.gridCardContainer}>

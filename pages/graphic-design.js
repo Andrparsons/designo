@@ -4,6 +4,7 @@ import styles from "../styles/Design.module.css";
 import Container from "../components/Container/Container";
 import CTA from "../components/CTA/CTA";
 import ProjectLink from "../components/ProjectLink/ProjectLink";
+import Card from "../components/Card/Card";
 
 export default function GraphicDesign() {
   return (
@@ -23,22 +24,30 @@ export default function GraphicDesign() {
           </p>
         </section>
 
-        {/* cards s/b components */}
         <section className={styles.cardSection}>
-          <div className={styles.card}>
-            Tim Brown A book cover designed for Tim Brown’s new release,
-            ‘Change’
-          </div>
+          <Container>
+            <div className={styles.gridCardContainer}>
+              <Card
+                imgSrc="/graphic-design/desktop/image-change.jpg"
+                title="Tim Brown"
+                text="A book cover designed for Tim Brown’s new release,
+                ‘Change’"
+              />
+              <Card
+                imgSrc="/graphic-design/desktop/image-boxed-water.jpg"
+                title="Boxed water"
+                text="A simple packaging concept made for Boxed Water"
+              />
 
-          <div className={styles.card}>
-            Boxed water A simple packaging concept made for Boxed Water
-          </div>
-
-          <div className={styles.card}>
-            Science! A poster made in collaboration with the Federal Art Project
-          </div>
+              <Card
+                imgSrc="/graphic-design/desktop/image-science.jpg"
+                title="Science!"
+                text="A poster made in collaboration with the Federal Art Project"
+              />
+            </div>
+          </Container>
         </section>
-        {/* project links s/b component */}
+
         <section className={styles.projectSection}>
           <Container>
             <div className={styles.projectGrid}>
