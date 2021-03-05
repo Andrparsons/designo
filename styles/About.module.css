@@ -1,0 +1,46 @@
+.introSection {
+  background-color: var(--highlightBg);
+  color: var(--textLight);
+  text-align: center;
+}
+
+.introPic {
+  vertical-align: middle;
+}
+
+.introContent {
+  padding: 5rem 1.5rem;
+  background-image: url(/about/mobile/bg-pattern-hero-about-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top -9rem right;
+}
+
+.introParagraph {
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 550px) {
+  .introSection {
+    margin: 0 2.5rem;
+    border-radius: var(--borderRadiuslarge);
+    padding: 4rem 0;
+    background-position: center left -2rem;
+  }
+
+  .introContainer {
+    padding: 0 3.625rem;
+  }
+
+  .introParagraph {
+    max-width: 445px;
+    margin: 1.5rem auto 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .introSection {
+    max-width: 1111px;
+    margin: 0 auto;
+    background-position: center right;
+  }
+}

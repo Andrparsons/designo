@@ -1,8 +1,9 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/About.module.css";
 
 import CTA from "../components/CTA/CTA";
 import Container from "../components/Container/Container";
+import Button from "../components/Button/Button";
 
 export default function About() {
   return (
@@ -15,15 +16,34 @@ export default function About() {
 
       <main className={styles.main}>
         <section className={styles.introSection}>
-          <h1>About us</h1>
-
-          <p>
-            Founded in 2010, we are a creative agency that produces lasting
-            results for our clients. We’ve partnered with many startups,
-            corporations, and nonprofits alike to craft designs that make real
-            impact. We’re always looking forward to creating brands, products,
-            and digital experiences that connect with our clients' audiences.
-          </p>
+          <div className={styles.introContainer}>
+            <picture>
+              <source
+                media="(min-width:900px)"
+                srcSet="/about/desktop/image-about-hero.jpg"
+              />
+              <source
+                media="(min-width:550px)"
+                srcSet="/about/tablet/image-about-hero.jpg"
+              />
+              <img
+                className={styles.introPic}
+                src="/about/mobile/image-about-hero.jpg"
+                alt="Teamwork"
+              />
+            </picture>
+            <div className={styles.introContent}>
+              <h1>About us</h1>
+              <p className={styles.introParagraph}>
+                Founded in 2010, we are a creative agency that produces lasting
+                results for our clients. We’ve partnered with many startups,
+                corporations, and nonprofits alike to craft designs that make
+                real impact. We’re always looking forward to creating brands,
+                products, and digital experiences that connect with our clients'
+                audiences.
+              </p>
+            </div>
+          </div>
         </section>
 
         <section className={styles.talent}>
@@ -39,17 +59,17 @@ export default function About() {
         <section className={styles.locations}>
           <div className={styles.location}>
             Canada
-            <button>See location</button>
+            <Button btnStyle="secondary">See location</Button>
           </div>
 
           <div className={styles.location}>
             Australia
-            <button>See location</button>
+            <Button btnStyle="secondary">See location</Button>
           </div>
 
           <div className={styles.location}>
             United Kingdom
-            <button>See location</button>
+            <Button btnStyle="secondary">See location</Button>
           </div>
         </section>
 
