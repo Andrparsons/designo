@@ -53,7 +53,7 @@ export default function About() {
           </div>
         </section>
 
-        <section className={styles.talent}>
+        <section className={styles.talentSection}>
           <h2>World-class talent</h2>
           <p>
             We are a crew of strategists, problem-solvers, and technologists.
@@ -63,7 +63,7 @@ export default function About() {
           </p>
         </section>
 
-        <section className={styles.locations}>
+        <section className={styles.locationSection}>
           <div className={styles.location}>
             <ImageDecoration orientation="top">
               <IllustrationCanada />
@@ -95,7 +95,7 @@ export default function About() {
           </div>
         </section>
 
-        <section className={styles.realDeal}>
+        <section className={styles.dealSection}>
           <h2>The real deal</h2>
           <p>
             As strategic partners in our clients’ businesses, we are ready to
