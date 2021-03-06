@@ -23,33 +23,30 @@ export default function About() {
 
       <main className={styles.main}>
         <section className={styles.introSection}>
-          <div className={styles.introContainer}>
-            <picture>
-              <source
-                media="(min-width:900px)"
-                srcSet="/about/desktop/image-about-hero.jpg"
-              />
-              <source
-                media="(min-width:550px)"
-                srcSet="/about/tablet/image-about-hero.jpg"
-              />
-              <img
-                className={styles.introPic}
-                src="/about/mobile/image-about-hero.jpg"
-                alt="Teamwork"
-              />
-            </picture>
-            <div className={styles.introContent}>
-              <h1>About us</h1>
-              <p className={styles.introParagraph}>
-                Founded in 2010, we are a creative agency that produces lasting
-                results for our clients. We’ve partnered with many startups,
-                corporations, and nonprofits alike to craft designs that make
-                real impact. We’re always looking forward to creating brands,
-                products, and digital experiences that connect with our clients'
-                audiences.
-              </p>
-            </div>
+          <picture>
+            <source
+              media="(min-width:900px)"
+              srcSet="/about/desktop/image-about-hero.jpg"
+            />
+            <source
+              media="(min-width:550px)"
+              srcSet="/about/tablet/image-about-hero.jpg"
+            />
+            <img
+              className={styles.introPic}
+              src="/about/mobile/image-about-hero.jpg"
+              alt="Teamwork"
+            />
+          </picture>
+          <div className={styles.introContent}>
+            <h1>About us</h1>
+            <p className={styles.introParagraph}>
+              Founded in 2010, we are a creative agency that produces lasting
+              results for our clients. We’ve partnered with many startups,
+              corporations, and nonprofits alike to craft designs that make real
+              impact. We’re always looking forward to creating brands, products,
+              and digital experiences that connect with our clients' audiences.
+            </p>
           </div>
         </section>
 

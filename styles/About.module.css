@@ -39,17 +39,19 @@
   .introSection {
     margin: 0 2.5rem;
     border-radius: var(--borderRadiuslarge);
-    padding: 4rem 0;
     background-position: center left -2rem;
-  }
-
-  .introContainer {
-    padding: 0 3.625rem;
+    overflow: hidden;
   }
 
   .introParagraph {
-    max-width: 445px;
+    max-width: 573px;
     margin: 1.5rem auto 0;
+  }
+
+  .introContent {
+    background-image: url(/about/desktop/bg-pattern-hero-about-desktop.svg);
+    background-position: bottom 6.25rem left -8rem;
+    padding: 4rem 1rem;
   }
 }
 
@@ -58,6 +60,26 @@
     max-width: 1111px;
     margin: 0 auto;
     background-position: center right;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .introParagraph {
+    max-width: 100%;
+    margin: 2rem 0 0;
+  }
+
+  .introPic {
+    min-width: max-content;
+  }
+
+  .introContent {
+    padding: 0 5.5rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-position: bottom left;
   }
 }
 
