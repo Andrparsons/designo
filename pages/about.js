@@ -1,9 +1,16 @@
 import Head from "next/head";
 import styles from "../styles/About.module.css";
 
-import CTA from "../components/CTA/CTA";
+import ImageDecoration from "../components/ImageDecoration/ImageDecoration";
 import Container from "../components/Container/Container";
 import Button from "../components/Button/Button";
+import CTA from "../components/CTA/CTA";
+
+import {
+  IllustrationCanada,
+  IllustrationAustralia,
+  IllustrationUnitedKingdom,
+} from "../components/SvgComponents/shared/desktop";
 
 export default function About() {
   return (
@@ -58,18 +65,33 @@ export default function About() {
 
         <section className={styles.locations}>
           <div className={styles.location}>
-            Canada
-            <Button btnStyle="secondary">See location</Button>
+            <ImageDecoration orientation="top">
+              <IllustrationCanada />
+            </ImageDecoration>
+            <div className={styles.locationContent}>
+              <h3 className={styles.locationTitle}>Canada</h3>
+              <Button btnStyle="secondary">See location</Button>
+            </div>
           </div>
 
           <div className={styles.location}>
-            Australia
-            <Button btnStyle="secondary">See location</Button>
+            <ImageDecoration orientation="left">
+              <IllustrationAustralia />
+            </ImageDecoration>
+            <div className={styles.locationContent}>
+              <h3 className={styles.locationTitle}>Australia</h3>
+              <Button btnStyle="secondary">See location</Button>
+            </div>
           </div>
 
           <div className={styles.location}>
-            United Kingdom
-            <Button btnStyle="secondary">See location</Button>
+            <ImageDecoration orientation="bottom">
+              <IllustrationUnitedKingdom />
+            </ImageDecoration>
+            <div className={styles.locationContent}>
+              <h3 className={styles.locationTitle}>United Kingdom</h3>
+              <Button btnStyle="secondary">See location</Button>
+            </div>
           </div>
         </section>
 

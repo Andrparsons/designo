@@ -1,9 +1,10 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
+import ImageDecoration from "../components/ImageDecoration/ImageDecoration";
+import ProjectLink from "../components/ProjectLink/ProjectLink";
 import Container from "../components/Container/Container";
 import Button from "../components/Button/Button";
-import ProjectLink from "../components/ProjectLink/ProjectLink";
 import CTA from "../components/CTA/CTA";
 
 // svg illustrations
@@ -73,9 +74,9 @@ export default function Home() {
           <Container>
             <div className={styles.features}>
               <div className={styles.feature}>
-                <div className={styles.passionateContainer}>
+                <ImageDecoration orientation="left">
                   <IllustrationPassionate />
-                </div>
+                </ImageDecoration>
                 <div className={styles.featureContent}>
                   <h3>Passionate</h3>
                   <p className={styles.featureText}>
@@ -88,9 +89,9 @@ export default function Home() {
               </div>
 
               <div className={styles.feature}>
-                <div className={styles.resourcefulContainer}>
+                <ImageDecoration orientation="bottom">
                   <IllustrationResourceful />
-                </div>
+                </ImageDecoration>
                 <div className={styles.featureContent}>
                   <h3>Resourceful</h3>
                   <p className={styles.featureText}>
@@ -103,9 +104,9 @@ export default function Home() {
               </div>
 
               <div className={styles.feature}>
-                <div className={styles.friendlyContainer}>
+                <ImageDecoration orientation="bottom">
                   <IllustrationFriendly />
-                </div>
+                </ImageDecoration>
                 <div className={styles.featureContent}>
                   <h3>Friendly</h3>
                   <p className={styles.featureText}>

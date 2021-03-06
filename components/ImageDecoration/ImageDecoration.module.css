@@ -1,0 +1,24 @@
+.left,
+.top,
+.bottom {
+  background: url(/shared/desktop/bg-pattern-small-circle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+}
+
+.bottom {
+  transform: rotate(-90deg);
+}
+
+.bottom > * {
+  transform: rotate(90deg);
+}
+
+.top {
+  transform: rotate(90deg);
+}
+
+.top > * {
+  transform: rotate(-90deg);
+}
